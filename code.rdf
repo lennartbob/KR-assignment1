@@ -1,0 +1,2422 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ss="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#" xml:base="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e" />
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Base_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J">
+        <rdfs:label xml:lang="en">Ingredient</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R72Vl8iCDQIe3XBZK5HfYTQ">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Sauces_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R73kKFRUGI07HvZ3Q73IHv5">
+        <rdfs:label xml:lang="en">VeganCheeseType</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R79WyztF9kwxhkni6cnrEoa">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7jIokUFbSowyPMaS8yD7vt" />
+        <rdfs:label xml:lang="en">HotSpiciness</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R79pvLO6Xov5mkS0VnKwDnw">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7jIokUFbSowyPMaS8yD7vt" />
+        <rdfs:label xml:lang="en">None_Spicyness</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7Qq3EzWyhP1zG2lHHEiPC2">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R72Vl8iCDQIe3XBZK5HfYTQ" />
+        <rdfs:label xml:lang="en">PestoType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7T9mNL4t6CGjAxqhpEXoX9">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">WheatFlourType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7UAHJZb2msTzSzqgtP49Yt">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCZpUlpZpMIsshWlKZeZLKG" />
+        <rdfs:label xml:lang="en">PescatarianDiet</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7anHDjaaPyLDXqmCuDqrtX">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">YeastType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7jIokUFbSowyPMaS8yD7vt">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing" />
+        <rdfs:label xml:lang="en">SpicinessLevel</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7klYoUnAVJGdOiCX6PmwkV">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Nuts_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7s3JrnUUYPENS4XC50UMJK">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9Ro2x9nVxCyLBXvqT1bawa" />
+        <rdfs:label xml:lang="en">ParmesanType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7wLsCaroCYW0ejVCuzIGqD">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RC3C4nAHwKquOnqnKrI9vJZ" />
+        <rdfs:label xml:lang="en">Ham_Meat</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R80igp976gNpIfQy1FEha1e">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7klYoUnAVJGdOiCX6PmwkV" />
+        <rdfs:label xml:lang="en">PineNutType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R83Q7wtemKdNNYulND9CTFV">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDnaRofgSjJEYddw3GqYgRy" />
+        <rdfs:label xml:lang="en">Pepper_Vegetable</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8Ivd89tGXueEQAoKdbbiCk">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7jIokUFbSowyPMaS8yD7vt" />
+        <rdfs:label xml:lang="en">Medium_Spicyness</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8Rbilf9fohGpV4iXOkQNwD">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RunCXKvPwdWwUwqVS1vgCi" />
+        <rdfs:label xml:lang="en">Pineapple_Fruit</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8Zheauz8ytH8XHnf61iKvR">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwACxdHVryH6DZf0mwpnb" />
+        <rdfs:label xml:lang="en">VeganDoughType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8cqJc314JPX3RUn4IsMP3K">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">WaterType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8d3SwfyLbenM94EnD8lmRJ">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCZpUlpZpMIsshWlKZeZLKG" />
+        <rdfs:label xml:lang="en">KosherDiet</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8iMqbOcZwoqjhKhNADCXMI">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">SaltType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8kwH4OwanvOi94F8OCwSoy">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDnaRofgSjJEYddw3GqYgRy" />
+        <rdfs:label xml:lang="en">TomatoType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8qFkw6AWCcjJay2RLuicKO">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9UTMdIWHwecO8lBAL0XQva" />
+        <rdfs:label xml:lang="en">OreganoType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8tJ8FmKgspJ1mtGaYHsw4p">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBpbFJ27fRWqur2TTOuH3lW" />
+        <rdfs:label xml:lang="en">AnchovyType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R917R3n9KCNxa1vyVUBjm4u">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RX7CioRbP7COV8OCq84FEn" />
+        <rdfs:label xml:lang="en">MargheritaPizzaType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R96RBAJsikvKIG3hx0JM2rS">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7jIokUFbSowyPMaS8yD7vt" />
+        <rdfs:label xml:lang="en">Low_Spicyness</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R99JEsAb5e66vr4h7EbVzoB">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">Gluten_Free_Flour_Base</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9Dh42JAiiUMEwf6ZPtRsrx">
+        <rdfs:label xml:lang="en">LactoseIntolerance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Intolerance" />
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9Ro2x9nVxCyLBXvqT1bawa">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Cheeses_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9UTMdIWHwecO8lBAL0XQva">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDnaRofgSjJEYddw3GqYgRy" />
+        <rdfs:label xml:lang="en">Herb_Vegetable</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9Xj6Kn75hyM72aN9H7LnGx">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwACxdHVryH6DZf0mwpnb" />
+        <rdfs:label xml:lang="en">NormalDoughType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9bXtZJzFEHCPtPle31OX3k">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">EggType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9fVR6G6Nyp98JYOeqjtPv8">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RwACxdHVryH6DZf0mwpnb" />
+        <rdfs:label xml:lang="en">Gluten_Free_Dough_Type</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RB1gmLvDkJxAiqbnIKUSQi7">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9Ro2x9nVxCyLBXvqT1bawa" />
+        <rdfs:label xml:lang="en">Provola_Cheese</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBPDxSaFY0trAIHVBTEOTSb">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCZpUlpZpMIsshWlKZeZLKG" />
+        <rdfs:label xml:lang="en">VegetarianDiet</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBSAeFVbwVjWtN1BEcOaXZK">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9Ro2x9nVxCyLBXvqT1bawa" />
+        <rdfs:label xml:lang="en">Gorgonzola_Cheese</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBgvhsOzE6uP0ErIKWEorQo">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R83Q7wtemKdNNYulND9CTFV" />
+        <rdfs:label xml:lang="en">BellPepperType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj">
+        <rdfs:label xml:lang="en">Customer</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBpbFJ27fRWqur2TTOuH3lW">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Fish_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC38H7N8KnIg9KQSTVDTZUI">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCZpUlpZpMIsshWlKZeZLKG" />
+        <rdfs:label xml:lang="en">HalalDiet</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC3C4nAHwKquOnqnKrI9vJZ">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Meats_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCZpUlpZpMIsshWlKZeZLKG">
+        <rdfs:label xml:lang="en">Diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DietaryRestriction" />
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCbY4SNwO67iVqpICOQ6R6E">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RX7CioRbP7COV8OCq84FEn" />
+        <rdfs:label xml:lang="en">PestoSpecialePizzaType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCpLtTP5FsKPLsBV0bcsiMF">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">Gluten_Free_Binder_Base</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDBL6UYCox9Zvz9xsBEBTXT">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBpbFJ27fRWqur2TTOuH3lW" />
+        <rdfs:label xml:lang="en">TunaType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDIP4wKoGovQhrB8BIcaX4U">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RX7CioRbP7COV8OCq84FEn" />
+        <rdfs:label xml:lang="en">VeganGardenPizzaType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDKnmNTyAYKHOiucieBHOwU">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RX7CioRbP7COV8OCq84FEn" />
+        <rdfs:label xml:lang="en">TonnoPizzaType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDfD0go8yI3w04L9OM5cXjb">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9UTMdIWHwecO8lBAL0XQva" />
+        <rdfs:label xml:lang="en">BasilType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDn5bycBXhIphmrKaDBV1vv">
+        <rdfs:label xml:lang="en">NutAllergy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Allergy" />
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDnaRofgSjJEYddw3GqYgRy">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Vegetables_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDp1z4lvld9z3ggr7e4l6yv">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R1ijyL62Gh7rXUNYUDPrP8" />
+        <rdfs:label xml:lang="en">OliveOilType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDtwyeJIapZPVI6DmbZPpJE">
+        <rdfs:label xml:lang="en">MushroomType</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RHzCESY0NIJ7qeYlrn1ITf">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCZpUlpZpMIsshWlKZeZLKG" />
+        <rdfs:label xml:lang="en">VeganDiet</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RP0IxSf8X2TVltz87N5O5t">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RC3C4nAHwKquOnqnKrI9vJZ" />
+        <rdfs:label xml:lang="en">Pepperoni_Meat</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RUW4LvhyapI26aZAs0Kxa4">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCZpUlpZpMIsshWlKZeZLKG" />
+        <rdfs:label xml:lang="en">Gluten_Free_Diet</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RX7CioRbP7COV8OCq84FEn">
+        <rdfs:label xml:lang="en">Pizza</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rme0w8ziea3icb12H8Wg7u">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R72Vl8iCDQIe3XBZK5HfYTQ" />
+        <rdfs:label xml:lang="en">TomatoSauceType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Ro7wjuBq7JitDuUuAKXRmf">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R83Q7wtemKdNNYulND9CTFV" />
+        <rdfs:label xml:lang="en">Jalapeño_Pepper</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RunCXKvPwdWwUwqVS1vgCi">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:label xml:lang="en">Fruits_Ingrediënt</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RwACxdHVryH6DZf0mwpnb">
+        <rdfs:label xml:lang="en">DoughBase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RyH9yH5Df7BKXKw6RebAOM">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R9Ro2x9nVxCyLBXvqT1bawa" />
+        <rdfs:label xml:lang="en">MozzarellaType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RzdhNCCBai4STSBGMMMyv2">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RDnaRofgSjJEYddw3GqYgRy" />
+        <rdfs:label xml:lang="en">OnionType</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish">
+        <rdfs:label xml:lang="en">Dish</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DietaryRestriction">
+        <rdfs:label xml:lang="en">DietaryRestriction</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Allergy">
+        <rdfs:label xml:lang="en">Allergy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DietaryRestriction" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Intolerance">
+        <rdfs:label xml:lang="en">Intolerance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DietaryRestriction" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Certification">
+        <rdfs:label xml:lang="en">Certification</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory">
+        <rdfs:label xml:lang="en">IngredientCategory</rdfs:label>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe">
+        <rdfs:label xml:lang="en">CompleteRecipe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EvaluationFixture">
+        <rdfs:label xml:lang="en">EvaluationFixture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish">
+        <rdfs:label xml:lang="en">MenuDish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenIntolerance">
+        <rdfs:label xml:lang="en">GlutenIntolerance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Intolerance" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Burger">
+        <rdfs:label xml:lang="en">Burger</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Curry">
+        <rdfs:label xml:lang="en">Curry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pasta">
+        <rdfs:label xml:lang="en">Pasta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Ramen">
+        <rdfs:label xml:lang="en">Ramen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowl">
+        <rdfs:label xml:lang="en">RiceBowl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Stew">
+        <rdfs:label xml:lang="en">Stew</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#StirFry">
+        <rdfs:label xml:lang="en">StirFry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+    </owl:Class>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient">
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasBase">
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#madeFrom">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasComponent" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasComponent">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains">
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#madeFrom" />
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:range rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#forbids">
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DietaryRestriction" />
+        <rdfs:range rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasRestriction">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj" />
+        <rdfs:range rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DietaryRestriction" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction">
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+        <rdfs:range rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DietaryRestriction" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasCertification">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:range rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Certification" />
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasSpiciness">
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7jIokUFbSowyPMaS8yD7vt" />
+    </owl:ObjectProperty>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">AnimalProduct</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">Dairy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">Fish</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Gluten">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">Gluten</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_HotSpicy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">HotSpicy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Lactose">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">Lactose</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">Meat</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">Nut</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#IngredientCategory" />
+        <rdfs:label xml:lang="en">Pork</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Gluten" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_HotSpicy" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Lactose" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+        </owl:distinctMembers>
+    </owl:AllDifferent>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalCertified">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Certification" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HotSpicinessLevel">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R79WyztF9kwxhkni6cnrEoa" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Anchovy">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8tJ8FmKgspJ1mtGaYHsw4p" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Basil">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDfD0go8yI3w04L9OM5cXjb" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Beef">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BeefPatty">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Beef" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BellPepper">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBgvhsOzE6uP0ErIKWEorQo" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cashew">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CashewSauce">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cashew" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Chickpea">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ChiliFlakes">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_HotSpicy" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_HotSpicy" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <ss:hasSpiciness rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HotSpicinessLevel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutMilk">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutOil">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cream">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CreamSauce">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cream" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Egg">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9bXtZJzFEHCPtPle31OX3k" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EggPasta">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Egg" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Eggplant">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#FishSauce">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Anchovy" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Salt" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Gluten" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Gluten" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GreenCurrySauce">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ChiliFlakes" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#FishSauce" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HouseDressing">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lactose">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Lactose" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Lactose" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lettuce">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MicrobialRennet">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lactose" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RyH9yH5Df7BKXKw6RebAOM" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MicrobialRennet" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mushroom">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDtwyeJIapZPVI6DmbZPpJE" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9Xj6Kn75hyM72aN9H7LnGx" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Olive">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#OliveOil">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDp1z4lvld9z3ggr7e4l6yv" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RzdhNCCBai4STSBGMMMyv2" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Oregano">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8qFkw6AWCcjJay2RLuicKO" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Parmesan">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7s3JrnUUYPENS4XC50UMJK" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pesto">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7Qq3EzWyhP1zG2lHHEiPC2" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Basil" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#OliveOil" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Parmesan" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PineNut" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PineNut">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R80igp976gNpIfQy1FEha1e" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasCertification" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasComponent" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <ss:hasCertification rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalCertified" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasCertification" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalCertified" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasComponent" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PotatoStarch">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RamenNoodles">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceFlour" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowlDressing">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#OliveOil" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceVinegar" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceFlour">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceVinegar">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Salami">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Salt">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8iMqbOcZwoqjhKhNADCXMI" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ShoyuSeasoning">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#SoySauce" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#SoySauce">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Soybean" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Soybean">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tofu">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Soybean" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8kwH4OwanvOi94F8OCwSoy" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Rme0w8ziea3icb12H8Wg7u" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Oregano" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tuna">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDBL6UYCox9Zvz9xsBEBTXT" />
+        <ss:ingredientCategory rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganCheese">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R73kKFRUGI07HvZ3Q73IHv5" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutOil" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PotatoStarch" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDough">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8Zheauz8ytH8XHnf61iKvR" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceFlour" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8cqJc314JPX3RUn4IsMP3K" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatBun">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R2L5lu9memTWv75NoXfj2J" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7T9mNL4t6CGjAxqhpEXoX9" />
+        <ss:madeFrom rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7anHDjaaPyLDXqmCuDqrtX" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Anchovy" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Basil" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Beef" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BeefPatty" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BellPepper" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cashew" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CashewSauce" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Chickpea" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ChiliFlakes" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutMilk" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutOil" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cream" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CreamSauce" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Egg" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EggPasta" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Eggplant" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#FishSauce" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GreenCurrySauce" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HouseDressing" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lactose" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lettuce" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MicrobialRennet" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mushroom" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Olive" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#OliveOil" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Oregano" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Parmesan" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pesto" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PineNut" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PotatoStarch" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RamenNoodles" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowlDressing" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceFlour" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceVinegar" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Salami" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Salt" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ShoyuSeasoning" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#SoySauce" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Soybean" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tofu" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tuna" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganCheese" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDough" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatBun" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast" />
+        </owl:distinctMembers>
+    </owl:AllDifferent>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BeefBurger">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Burger" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BeefPatty" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lettuce" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatBun" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BeefPatty" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lettuce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatBun" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Beef" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BeefPatty" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lettuce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatBun" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CashewVegetableStirFry">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#StirFry" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BellPepper" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CashewSauce" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BellPepper" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CashewSauce" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BellPepper" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cashew" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CashewSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CertifiedGelatinFixture">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EvaluationFixture" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ChickpeaTomatoStew">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Stew" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Chickpea" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Chickpea" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Chickpea" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Oregano" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CreamyMushroomPasta">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pasta" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CreamSauce" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mushroom" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EggPasta" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CreamSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EggPasta" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mushroom" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Cream" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CreamSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Egg" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EggPasta" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lactose" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mushroom" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GelatinAndPorkFixture">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EvaluationFixture" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkGelatin" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MargheritaPizza">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R917R3n9KCNxa1vyVUBjm4u" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Basil" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Basil" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Basil" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lactose" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MicrobialRennet" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Oregano" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PestoSpecialePizza">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RCbY4SNwO67iVqpICOQ6R6E" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pesto" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pesto" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Basil" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Lactose" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MicrobialRennet" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Milk" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Mozzarella" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#OliveOil" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Parmesan" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pesto" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PineNut" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkShoyuRamen">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Ramen" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ShoyuSeasoning" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RamenNoodles" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RamenNoodles" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ShoyuSeasoning" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Pork" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkBroth" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RamenNoodles" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceFlour" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ShoyuSeasoning" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#SoySauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Soybean" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ThaiGreenCurry">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Curry" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutMilk" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Eggplant" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GreenCurrySauce" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutMilk" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Eggplant" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GreenCurrySauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Anchovy" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ChiliFlakes" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutMilk" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Eggplant" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#FishSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GreenCurrySauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Salt" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TofuRiceBowl">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowl" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowlDressing" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tofu" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowlDressing" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tofu" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#OliveOil" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowlDressing" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceVinegar" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Soybean" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tofu" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TonnoPizza">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDKnmNTyAYKHOiucieBHOwU" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tuna" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tuna" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Gluten" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NormalDough" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Onion" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Oregano" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tuna" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#WheatFlour" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Yeast" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#UnknownDressingBowl">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceBowl" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EvaluationFixture" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Carrot" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HouseDressing" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tofu" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rice" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganGardenPizza">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDIP4wKoGovQhrB8BIcaX4U" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MenuDish" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Olive" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+        <ss:hasIngredient rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganCheese" />
+        <ss:hasBase rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDough" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Olive" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganCheese" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDough" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CoconutOil" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Olive" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Oregano" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PotatoStarch" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#RiceFlour" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Rucola" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Tomato" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TomatoSauce" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganCheese" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDough" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Water" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#BeefBurger" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CashewVegetableStirFry" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CertifiedGelatinFixture" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ChickpeaTomatoStew" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CreamyMushroomPasta" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GelatinAndPorkFixture" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#MargheritaPizza" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PestoSpecialePizza" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PorkShoyuRamen" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ThaiGreenCurry" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TofuRiceBowl" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#TonnoPizza" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#UnknownDressingBowl" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganGardenPizza" />
+        </owl:distinctMembers>
+    </owl:AllDifferent>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenIntolerance">
+        <rdf:type rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenIntolerance" />
+        <rdfs:label xml:lang="en">GlutenIntolerance restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Gluten" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Gluten" />
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenIntolerance" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenFreeDish">
+        <rdfs:label xml:lang="en">GlutenFreeDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Gluten" />
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalDiet">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RC38H7N8KnIg9KQSTVDTZUI" />
+        <rdfs:label xml:lang="en">HalalDiet restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalDiet" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalCompatibleDish">
+        <rdfs:label xml:lang="en">HalalCompatibleDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#KosherDiet">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R8d3SwfyLbenM94EnD8lmRJ" />
+        <rdfs:label xml:lang="en">KosherDiet restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#KosherDiet" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#KosherCompatibleDish">
+        <rdfs:label xml:lang="en">KosherCompatibleDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#LactoseIntolerance">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R9Dh42JAiiUMEwf6ZPtRsrx" />
+        <rdfs:label xml:lang="en">LactoseIntolerance restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Lactose" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Lactose" />
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#LactoseIntolerance" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#LactoseFreeDish">
+        <rdfs:label xml:lang="en">LactoseFreeDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Lactose" />
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NutAllergy">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RDn5bycBXhIphmrKaDBV1vv" />
+        <rdfs:label xml:lang="en">NutAllergy restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NutAllergy" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NutFreeDish">
+        <rdfs:label xml:lang="en">NutFreeDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Nut" />
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PescatarianDiet">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/R7UAHJZb2msTzSzqgtP49Yt" />
+        <rdfs:label xml:lang="en">PescatarianDiet restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PescatarianDiet" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PescatarianDish">
+        <rdfs:label xml:lang="en">PescatarianDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDiet">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RHzCESY0NIJ7qeYlrn1ITf" />
+        <rdfs:label xml:lang="en">VeganDiet restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy" />
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy" />
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDiet" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDish">
+        <rdfs:label xml:lang="en">VeganDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_AnimalProduct" />
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy" />
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianDiet">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBPDxSaFY0trAIHVBTEOTSb" />
+        <rdfs:label xml:lang="en">VegetarianDiet restriction</rdfs:label>
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+        <ss:forbids rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+    </owl:NamedIndividual>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#violatesRestriction" />
+                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianDiet" />
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianDish">
+        <rdfs:label xml:lang="en">VegetarianDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Fish" />
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Meat" />
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenIntolerance" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalDiet" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#KosherDiet" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#LactoseIntolerance" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NutAllergy" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#PescatarianDiet" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDiet" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianDiet" />
+        </owl:distinctMembers>
+    </owl:AllDifferent>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#anna">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj" />
+        <ss:hasRestriction rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDiet" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasRestriction" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VeganDiet" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#lisa">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj" />
+        <ss:hasRestriction rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenIntolerance" />
+        <ss:hasRestriction rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianDiet" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasRestriction" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#GlutenIntolerance" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianDiet" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#mia">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj" />
+        <ss:hasRestriction rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#LactoseIntolerance" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasRestriction" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#LactoseIntolerance" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#omar">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj" />
+        <ss:hasRestriction rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalDiet" />
+        <ss:hasRestriction rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NutAllergy" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasRestriction" />
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalDiet" />
+                            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#NutAllergy" />
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#tom">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj" />
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasRestriction" />
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing" />
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    <owl:AllDifferent>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#anna" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#lisa" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#mia" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#omar" />
+            <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#tom" />
+        </owl:distinctMembers>
+    </owl:AllDifferent>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#DairyFreeDish">
+        <rdfs:label xml:lang="en">DairyFreeDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Dairy" />
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#SpicyDish">
+        <rdfs:label xml:lang="en">SpicyDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Dish" />
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#contains" />
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasSpiciness" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HotSpicinessLevel" />
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianSalamiDish">
+        <rdfs:label xml:lang="en">VegetarianSalamiDish</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#VegetarianDish" />
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#Salami" />
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    <owl:Class rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalWithFixtureException">
+        <rdfs:label xml:lang="en">HalalWithFixtureException</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#EvaluationFixture" />
+                    <rdf:Description rdf:about="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#CompleteRecipe" />
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasCertification" />
+                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalCertified" />
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasIngredient" />
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasCertification" />
+                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#HalalCertified" />
+                                    </owl:Restriction>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                        <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#hasComponent" />
+                                                        <owl:someValuesFrom>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#ingredientCategory" />
+                                                                <owl:hasValue rdf:resource="urn:webprotege:ontology:24f24fb3-ac8e-4130-8e1c-8d5a4614a18e#category_Pork" />
+                                                            </owl:Restriction>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>

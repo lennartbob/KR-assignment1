@@ -1,0 +1,13 @@
+restriction,forbids
+VeganDiet,Meat
+VeganDiet,Fish
+VeganDiet,Dairy
+VeganDiet,AnimalProduct
+VegetarianDiet,Meat
+VegetarianDiet,Fish
+PescatarianDiet,Meat
+HalalDiet,Pork
+KosherDiet,Pork
+NutAllergy,Nut
+GlutenIntolerance,Gluten
+LactoseIntolerance,Lactose

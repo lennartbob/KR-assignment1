@@ -1,0 +1,11 @@
+pizza,base
+MargheritaPizza,NormalDough
+PepperoniPizza,NormalDough
+QuattroFormaggiPizza,GlutenFreeDough
+HawaiianPizza,NormalDough
+VegetarianaPizza,NormalDough
+PestoSpecialePizza,NormalDough
+TonnoPizza,NormalDough
+VeganGardenPizza,VeganDough
+DiavolaPizza,NormalDough
+FunghiPizza,NormalDough

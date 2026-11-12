@@ -1,0 +1,58 @@
+@import hasIngredient :- csv { resource = "../data/dish_ingredients.csv", ignore_headers = true } .
+@import hasBase :- csv { resource = "../data/bases.csv", ignore_headers = true } .
+@import madeFrom :- csv { resource = "../data/madefrom.csv", ignore_headers = true } .
+@import category :- csv { resource = "../data/categories.csv", ignore_headers = true } .
+@import forbids :- csv { resource = "../data/restrictions.csv", ignore_headers = true } .
+@import customerRestriction :- csv { resource = "../data/customers.csv", ignore_headers = true } .
+
+directIngredient(?dish, ?ingredient) :- hasIngredient(?dish, ?ingredient) .
+directIngredient(?dish, ?ingredient) :- hasBase(?dish, ?ingredient) .
+dish(?dish) :- directIngredient(?dish, ?ingredient) .
+menuDish(?dish) :- dish(?dish), ~category(?dish, EvaluationFixture) .
+customer(?customer) :- customerRestriction(?customer, ?entry) .
+hasRestriction(?customer, ?restriction) :- customerRestriction(?customer, ?restriction), ?restriction != None .
+
+containsIngredient(?dish, ?ingredient) :- directIngredient(?dish, ?ingredient) .
+containsIngredient(?dish, ?component) :- containsIngredient(?dish, ?ingredient), madeFrom(?ingredient, ?component) .
+
+violation(?dish, ?restriction, ?ingredient) :-
+    containsIngredient(?dish, ?ingredient), category(?ingredient, ?tag), forbids(?restriction, ?tag) .
+blocked(?dish, ?restriction) :- violation(?dish, ?restriction, ?ingredient) .
+restriction(?restriction) :- forbids(?restriction, ?tag) .
+complies(?dish, ?restriction) :-
+    category(?dish, CompleteRecipe), dish(?dish), restriction(?restriction), ~blocked(?dish, ?restriction) .
+unsafeFor(?dish, ?customer) :- hasRestriction(?customer, ?restriction), blocked(?dish, ?restriction) .
+noKnownBlockerFor(?dish, ?customer) :- dish(?dish), customer(?customer), ~unsafeFor(?dish, ?customer) .
+safeFor(?dish, ?customer) :- noKnownBlockerFor(?dish, ?customer), category(?dish, CompleteRecipe) .
+unknownFor(?dish, ?customer) :- noKnownBlockerFor(?dish, ?customer), ~category(?dish, CompleteRecipe) .
+spicyBecause(?dish, ?ingredient) :- containsIngredient(?dish, ?ingredient), category(?ingredient, HotSpicy) .
+containsDairy(?dish) :- containsIngredient(?dish, ?ingredient), category(?ingredient, Dairy) .
+dairyFree(?dish) :- dish(?dish), category(?dish, CompleteRecipe), ~containsDairy(?dish) .
+
+% Q13 compares an explicit hypothetical policy for the two gelatin fixtures.
+containsOutsideException(?dish, ?ingredient) :-
+    category(?dish, EvaluationFixture), directIngredient(?dish, ?ingredient), ~category(?ingredient, HalalCertified) .
+containsOutsideException(?dish, ?component) :-
+    containsOutsideException(?dish, ?ingredient), madeFrom(?ingredient, ?component) .
+porkOutsideException(?dish) :- containsOutsideException(?dish, ?ingredient), category(?ingredient, Pork) .
+halalWithFixtureException(?dish) :-
+    category(?dish, EvaluationFixture), category(?dish, CompleteRecipe),
+    directIngredient(?dish, ?ingredient), category(?ingredient, HalalCertified), ~porkOutsideException(?dish) .
+
+% Q10 uses an explicit integrity check for the hypothetical vegetarian salami dish.
+declaredVegetarianIngredient(VegetarianSalamiDish, Salami) .
+integrityViolation(?dish, ?ingredient) :-
+    declaredVegetarianIngredient(?dish, ?ingredient), category(?ingredient, ?tag), forbids(VegetarianDiet, ?tag) .
+
+@export menuDish :- csv {} .
+@export containsIngredient :- csv {} .
+@export violation :- csv {} .
+@export complies :- csv {} .
+@export safeFor :- csv {} .
+@export unsafeFor :- csv {} .
+@export unknownFor :- csv {} .
+@export noKnownBlockerFor :- csv {} .
+@export spicyBecause :- csv {} .
+@export dairyFree :- csv {} .
+@export halalWithFixtureException :- csv {} .
+@export integrityViolation :- csv {} .

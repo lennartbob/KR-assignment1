@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{booktabs,enumitem,array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title{SafeSlice, Step 4: Competency Questions\\ \large The frozen set of 14, and how each one is asked in OWL and in datalog}
+\author{SafeSlice group}
+\date{v1.0, frozen}
+\begin{document}
+\maketitle
+
+\noindent A competency question is a domain question in plain English. It is not the same thing as soundness or satisfiability, those are properties of formalisms. But some of our questions are answered BY a satisfiability check under the hood, and we say so where it happens.
+
+\section{The questions}
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+\item Which pizzas can anna (vegan) eat?
+\item Which pizzas are safe for someone with a nut allergy?
+\item Is MargheritaPizza vegetarian?
+\item Which pizzas contain Milk, directly or through any ingredient chain?
+\item Which pizzas can omar eat? He is halal AND nut allergic at the same time.
+\item Which pizzas are spicy, and why?
+\item List everything PestoSpecialePizza contains, including hidden ingredients.
+\item Negative: the system must NOT report PestoSpecialePizza as nut free.
+\item Negative: the system must NOT flag VeganGardenPizza as dairy unsafe (VeganCheese is not made from milk).
+\item Negative: VegetarianSalamiPizza must come out impossible.
+\item Negative: a pizza on NormalDough must NOT come out gluten free, whatever its toppings.
+\item Tricky: an ingredient with no madeFrom information at all, is a pizza containing it safe? OWL and datalog will answer this differently, and both answers go in the report.
+\item Tricky: if PorkGelatin is HalalCertified, does a pizza containing it become halal?
+\item Tricky: WHY is TonnoPizza not vegetarian? Which facts and rules produce the verdict?
+\end{enumerate}
+
+\section{How each question is actually asked}
+
+\begin{center}
+\begin{tabular}{L{0.8cm} L{6.6cm} L{6.6cm}}
+\toprule
+Q & In Prot\'eg\'e (OWL) & In Nemo (datalog)\\
+\midrule
+1 & DL Query tab: \texttt{VeganPizza}, read the subclasses and instances & query \texttt{safeFor(?P, anna)}\\
+2 & DL Query: \texttt{NutFreePizza} & \texttt{nutFree(?P)} or \texttt{safeFor(?P, ?C)} for a customer with NutAllergy\\
+3 & check whether MargheritaPizza appears under VegetarianPizza after reasoning & is \texttt{vegetarianOk(MargheritaPizza)} derived\\
+4 & DL Query: \texttt{Pizza and (contains some Milk)} & \texttt{contains(?P, Milk)}\\
+5 & DL Query: \texttt{HalalPizza and NutFreePizza} & \texttt{safeFor(?P, omar)}, the two restrictions combine automatically\\
+6 & DL Query: \texttt{SpicyPizza}, justification shows why & \texttt{spicy(?P)}, the deriving rule names the hot ingredient\\
+7 & select the pizza, inspect inferred contains assertions & \texttt{contains(PestoSpecialePizza, ?X)}\\
+8 & PestoSpecialePizza must NOT appear under NutFreePizza & \texttt{nutFree(PestoSpecialePizza)} must NOT be derived\\
+9 & VeganGardenPizza must stay under DairyFreePizza & \texttt{unsafeFor(VeganGardenPizza, mia)} must NOT be derived\\
+10 & the class turns red: unsatisfiable (this is the satisfiability check) & no direct equivalent, datalog has no class contradiction, we note this as a comparison finding\\
+11 & any NormalDough pizza must NOT appear under GlutenFreePizza & \texttt{glutenFree(?P)} must exclude them\\
+12 & open world: without closure axioms OWL answers unknown & closed world: datalog answers safe, because nothing bad is derivable\\
+13 & exception modelled in the HalalPizza definition via hasCertification & a rule with negation: forbidden unless certified\\
+14 & click the question mark next to the inference, Prot\'eg\'e shows the minimal justifying axioms & show the derivation chain of \texttt{unsafeFor(TonnoPizza, ?)} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Evaluation rule: every question is run on BOTH knowledge bases and recorded in one shared table with columns: question, OWL answer, datalog answer, effort (easy, hard, impossible), notes. Differences are findings, not bugs.
+\end{document}

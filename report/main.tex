@@ -1,0 +1,79 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{booktabs,longtable,array,url}
+
+\title{SafeSlice\\[0.3em]\large Reasoning about dietary restrictions across a restaurant menu}
+\author{SafeSlice group}
+\date{November 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+SafeSlice asks whether a dish complies with a customer's recorded dietary restrictions. We built an OWL 2 DL ontology and a Datalog program from the same six CSV tables. The restaurant menu has eleven dishes, including four pizzas and seven other dishes. Both engines find indirect blockers such as gluten in a wheat-containing soy sauce and fish in a curry sauce. We compare their answers on fourteen competency questions, including a recipe with incomplete ingredient data and a deliberately impossible class.
+\end{abstract}
+
+\section{Domain and data}
+
+The menu includes Margherita, Pesto Speciale, Vegan Garden, and Tonno pizzas, as well as pork shoyu ramen, Thai green curry, a beef burger, creamy mushroom pasta, a tofu rice bowl, a cashew vegetable stir-fry, and chickpea tomato stew. The ingredient and restriction facts describe the recipes and policies chosen for this coursework dataset. For example, the Margherita uses mozzarella with microbial rennet. The halal and kosher policies in the dataset both block pork.
+
+The CSVs record direct dish ingredients, optional bases, ingredient composition, categories and recipe metadata, forbidden categories, and customer restrictions. Lactose is an explicit component reached through milk. Dairy is tracked separately. Both implementations use the same five customer profiles. Three additional dishes exercise incomplete composition and a hypothetical certification policy outside the menu.
+
+\section{Knowledge representation}
+
+In OWL, \texttt{Dish} generalises the original pizza class. Named individuals represent the dishes, ingredients, customers, and restrictions. \texttt{hasBase} is a subproperty of \texttt{hasIngredient}, which is a subproperty of \texttt{contains}. The chain \texttt{contains} $\circ$ \texttt{madeFrom} $\sqsubseteq$ \texttt{contains} reaches components at any depth. A dish with a component in a forbidden category entails a \texttt{violatesRestriction} assertion. Positive compliance classes such as \texttt{NutFreeDish} require a complete recipe and sufficient closure information to rule out the forbidden category. Customer decisions combine the inferred restriction results for each profile~\cite{owl}.
+
+In Nemo, two rules seed containment with direct ingredients and bases. A recursive rule follows \texttt{madeFrom}. Joining the resulting components to the category and restriction tables derives a violation with its ingredient witness. Stratified negation derives \texttt{noKnownBlockerFor}~\cite{nemo}. The \texttt{safeFor} rule additionally requires a complete recipe. An incomplete recipe with no known blocker yields an unknown decision.
+
+\clearpage
+\section{Evaluation}
+
+HermiT 1.4.3.456 classified the ontology after the OWL 2 DL profile and consistency checks. Nemo 0.10.1 evaluated the shared CSVs. All fourteen checks passed. The normalized exports agreed on 313 tuples across ten relations, including 113 dish--ingredient pairs and 39 dish--restriction--ingredient violation witnesses. The table records the result for each competency question.
+
+\begin{longtable}{@{}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.63\textwidth}@{}}
+\toprule
+ID & Question & Observed result \\
+\midrule
+\endfirsthead
+\toprule
+ID & Question & Observed result \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Q1 & Dishes for Anna & Both returned Vegan Garden pizza, tofu rice bowl, cashew vegetable stir-fry, and chickpea tomato stew. \\
+Q2 & Dishes for a nut allergy & Both returned nine menu dishes. Pesto Speciale and cashew vegetable stir-fry contain a nut blocker. \\
+Q3 & Vegetarian Margherita & Both classified the chosen recipe as compliant with the vegetarian policy. \\
+Q4 & Dishes containing milk & Both returned Margherita, Pesto Speciale, and creamy mushroom pasta. \\
+Q5 & Dishes for Omar & Both returned eight. Pesto Speciale and cashew stir-fry trigger his nut restriction. Pork shoyu ramen triggers his pork restriction. \\
+Q6 & Spiciness and cause & Both identified Thai green curry via green curry sauce and chili flakes. \\
+Q7 & Pesto Speciale ingredients & Both returned 15 components. The paths through pesto and normal dough expose pine nuts, milk, lactose, and gluten. \\
+Q8 & Nut-free negative case & Both found pine nuts via pesto and excluded Pesto Speciale from the nut-free results. \\
+Q9 & Dairy-free positive case & Both classified Vegan Garden as dairy-free. Its recipe also passed Mia's lactose restriction. \\
+Q10 & Vegetarian salami contradiction & HermiT found the uninstantiated class unsatisfiable while the ontology remained consistent. Nemo flagged salami via an explicit integrity rule. \\
+Q11 & Gluten in dough and ramen & Both inferred gluten via wheat flour for all three normal-dough pizzas. The ramen reaches gluten via shoyu seasoning and soy sauce. \\
+Q12 & Unknown dressing & OWL could establish neither compliance nor a violation for Lisa. Nemo derived no known blocker, then returned unknown because the recipe lacks completeness evidence. The complete tofu bowl passed. \\
+Q13 & Hypothetical certificate & Both blocked the two gelatin fixtures under the baseline pork rule. Under the separate hypothetical exception, both allowed the certified-only fixture. The added pork broth still blocked the other fixture. \\
+Q14 & Vegetarian violation explanation & Both found tuna directly in Tonno and anchovy through fish sauce in Thai green curry. Nemo traced the rule steps for both. \\
+\end{longtable}
+
+For Q7, both engines returned basil, gluten, lactose, microbial rennet, milk, mozzarella, normal dough, olive oil, Parmesan, pesto, pine nuts, rucola, water, wheat flour, and yeast.
+
+\clearpage
+\section{Discussion}
+
+For complete recipes, OWL represents category and recipe closure as axioms, allowing HermiT to establish positive compliance. Nemo computes the known ingredient graph directly and can check whether a blocker is derivable. The unknown-dressing fixture exposes this difference. Explicit completeness evidence makes the final decisions agree.
+
+The salami fixture tests another difference. OWL can show that a class has no possible instances under its definitions. The Datalog program expresses the same conflict as an integrity rule with a reported witness. For explanations, the shared ingredient graph gives a concrete path in either representation. In the curry case, the path is \textit{Thai green curry $\to$ green curry sauce $\to$ fish sauce $\to$ anchovy}. The final step uses anchovy's fish category and the vegetarian restriction.
+
+\section*{Reproducibility}
+
+The Git project contains the six CSVs, \texttt{code.rdf}, the Nemo program, and the scripts used to compare the engines. The evaluated files have SHA-256 prefixes \texttt{0cf8ec03a325} for the ontology and \texttt{8e34a090584e} for the rule file.
+
+\begin{thebibliography}{9}
+\bibitem{owl} W3C. \textit{OWL 2 Web Ontology Language Primer}, second edition. \url{https://www.w3.org/TR/owl2-primer/}.
+\bibitem{nemo} Nemo documentation. \textit{Nemo's rule language}. \url{https://knowsys.github.io/nemo-doc/intro/tour/}.
+\end{thebibliography}
+
+\end{document}

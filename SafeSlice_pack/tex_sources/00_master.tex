@@ -1,0 +1,37 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{enumitem}
+\title{SafeSlice: Project Plan and Document Map\\ \large Knowledge Representation group project, can customer C safely eat pizza P?}
+\author{Merijn, Lennart, Jasper, Sai}
+\date{10 November 2026}
+\begin{document}
+\maketitle
+
+\noindent Our domain: a pizzeria menu where customers have diets (vegan, halal, kosher, vegetarian, pescatarian) and allergies (nuts, gluten, lactose). Ingredients are made from other ingredients, so safety must be derived through chains, for example pesto contains pine nuts even if the menu never says so. We build the knowledge base twice, in OWL and in datalog, run the same questions on both, and compare.
+
+\section*{The steps, in order}
+
+\begin{enumerate}[leftmargin=*, itemsep=4pt]
+\item \textbf{Fix the domain.} Decide what the system is about and which question it answers. Status: done, described above and on every document header.
+\item \textbf{Collect the terminology (50 to 100 terms).} All classes, properties, individuals and defined classes, with one agreed naming convention. Details: \texttt{01\_terms.pdf}.
+\item \textbf{Design the ontology.} The class hierarchy, the relations between classes, and which relations are typed versus derived. All diagrams (per branch trees, the relation diagram, and the full one picture view). Details: \texttt{02\_ontology\_diagrams.pdf}.
+\item \textbf{Freeze the competency questions.} The questions the system must answer, including negative ones (things that must NOT follow) and tricky ones. Also: how each question is actually asked in OWL and in datalog. Details: \texttt{03\_competency\_questions.pdf}.
+\item \textbf{Create the shared data.} Six small CSV files that hold every fact of the domain exactly once. Both formalisms are built from these files, so the comparison stays fair. The files themselves are in the \texttt{data/} folder. How to load them into Prot\'eg\'e and into Nemo, step by step: \texttt{04\_data\_and\_implementation.pdf}.
+\item \textbf{Formalise in OWL} (Merijn and Lennart). Class tree and properties in Prot\'eg\'e, data entered from the CSVs, defined classes, closure axioms, run HermiT, collect screenshots of inferences.
+\item \textbf{Formalise in datalog} (Sai and Jasper). Facts imported from the same CSVs into Nemo, recursive contains rules, negation based safety rules, run and export derived facts.
+\item \textbf{Evaluate.} Run all competency questions on both knowledge bases, record every answer in one shared results table: question, OWL answer, datalog answer, effort, notes.
+\item \textbf{Compare and write.} Where the two engines agree, where they differ, and why (open world versus closed world, recursion, contradictions, explanations). Optional research question: which formalism gives more understandable explanations for a compliance answer.
+\item \textbf{Submissions.} Initial report: 20 November (we submit the 19th). Peer reviews: 27 November. Final report plus both knowledge base files: 4 December. GitHub and Overleaf from day one, contribution appendix from day one.
+\end{enumerate}
+
+\section*{Document map}
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+\item \texttt{00\_master.pdf}: this document.
+\item \texttt{01\_terms.pdf}: all terms.
+\item \texttt{02\_ontology\_diagrams.pdf}: relations, rules and every diagram.
+\item \texttt{03\_competency\_questions.pdf}: the frozen questions and how to query them.
+\item \texttt{04\_data\_and\_implementation.pdf}: the CSV catalogue and the exact loading steps.
+\item \texttt{data/}: the six CSV files (pizzas, bases, madefrom, categories, restrictions, customers).
+\end{itemize}
+\end{document}

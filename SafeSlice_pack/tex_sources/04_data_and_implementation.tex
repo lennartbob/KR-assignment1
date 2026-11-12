@@ -1,0 +1,65 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{booktabs,enumitem}
+\title{SafeSlice, Step 5: Shared Data and Implementation\\ \large The six CSV files and exactly how to load them into Prot\'eg\'e and Nemo}
+\author{SafeSlice group}
+\date{v1.0}
+\begin{document}
+\maketitle
+
+\section{Why CSV files at all}
+The two teams build the same world in two formalisms. If each team types its own facts, the knowledge bases drift apart and the comparison chapter collapses. So every fact of the domain lives exactly once, in six small CSV files in \texttt{data/} in the repo. Both knowledge bases are built FROM these files. If the menu changes, we change the CSV and both teams rebuild. One vocabulary, two engines.
+
+\section{The six files}
+\begin{tabular}{llll}
+\toprule
+File & Columns & Rows & Becomes\\
+\midrule
+pizzas.csv & pizza, topping & 37 & hasTopping facts\\
+bases.csv & pizza, base & 10 & hasBase facts\\
+madefrom.csv & ingredient, made\_from & 22 & madeFrom facts\\
+categories.csv & item, category & 13 & category facts\\
+restrictions.csv & restriction, forbids & 12 & forbids facts\\
+customers.csv & customer, restriction & 7 & hasRestriction facts\\
+\bottomrule
+\end{tabular}
+
+\vspace{2mm}\noindent Names in the CSVs are character identical to the class names in Prot\'eg\'e and to the constants in the datalog files. That identity is what keeps the comparison fair.
+
+\section{Loading into datalog (Nemo), step by step}
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+\item Clone the repo, open it in VS Code, the rules file is \texttt{datalog/safeslice.rls}.
+\item At the top of the rules file, import the CSVs as facts:
+\begin{verbatim}
+@import hasTopping :- csv { resource = "../data/pizzas.csv" } .
+@import hasBase :- csv { resource = "../data/bases.csv" } .
+@import madeFrom :- csv { resource = "../data/madefrom.csv" } .
+@import category :- csv { resource = "../data/categories.csv" } .
+@import forbids :- csv { resource = "../data/restrictions.csv" } .
+@import hasRestriction :- csv { resource = "../data/customers.csv" } .
+\end{verbatim}
+Each row of a file becomes one fact, for example the row Pesto,PineNut becomes madeFrom(Pesto, PineNut). Check the exact import syntax against the Nemo documentation (knowsys.github.io/nemo-doc) for the installed version, and mind the header row.
+\item Below the imports, write the rules (contains recursion, safety rules).
+\item Run: \texttt{nmo safeslice.rls}. Derived relations marked with @output are written as CSV files into a results folder. Or paste everything into the browser playground (tools.iccl.inf.tu-dresden.de/nemo) with the facts inline.
+\item Query the competency questions and save the outputs, those derived rows are our inferences for the report.
+\end{enumerate}
+
+\section{Loading into Prot\'eg\'e (OWL), step by step}
+Important: WebProt\'eg\'e cannot import CSV and has no reasoner. The OWL pipeline is: build and collaborate in WebProt\'eg\'e if you like, but the data entry and all reasoning happen in desktop Prot\'eg\'e.
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+\item Build the class tree and the properties first (from documents 01 and 02).
+\item Enter the CSV rows as assertions. Two options:
+\begin{itemize}[leftmargin=*]
+\item \textbf{Manual} (fine at our size): for each pizza create the individual or use the class, and add one hasTopping assertion per row of pizzas.csv. The CSV is the checklist: every row becomes exactly one assertion, nothing extra, nothing missing.
+\item \textbf{Semi automatic}: desktop Prot\'eg\'e has the Cellfie plugin (File, then Import spreadsheet data) which maps spreadsheet rows to OWL axioms with a small transformation rule, one rule per file. Worth trying once, fall back to manual if it fights us.
+\end{itemize}
+\item Write the defined classes and the closure axioms.
+\item Start the reasoner: Reasoner menu, HermiT, Start. Inferred facts show in yellow, impossible classes turn red. Screenshot these, they go in the report.
+\item Run the competency questions in the DL Query tab and record the answers in the shared results table.
+\item File, Save as, RDF/XML. Commit the .owl file to the repo after every session.
+\end{enumerate}
+
+\section{The division of work from here}
+Merijn and Lennart: section 4 of this document. Sai and Jasper: section 3. Everyone: keep the CSVs as the only place where facts change, and commit often, the version history is inspected.
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{booktabs,enumitem,longtable}
+\title{SafeSlice, Step 2: Terminology\\ \large All terms of the domain, around 105 in total}
+\author{SafeSlice group}
+\date{v1.0, freeze on Friday}
+\begin{document}
+\maketitle
+
+\noindent Naming convention for everything: CamelCase, singular, plain ASCII, and no parent name inside a class name (the hierarchy already carries that). Named pizzas keep the word Pizza only to avoid clashes with toppings (PepperoniPizza versus the topping Pepperoni).
+
+\section{Classes by branch (72)}
+
+\subsection*{Pizza (11)}
+MargheritaPizza, PepperoniPizza, QuattroFormaggiPizza, HawaiianPizza, VegetarianaPizza, PestoSpecialePizza, TonnoPizza, VeganGardenPizza, DiavolaPizza, FunghiPizza
+
+\subsection*{Ingredient (37)}
+\begin{itemize}[leftmargin=*, itemsep=1pt]
+\item \textbf{Vegetable}: Tomato, Onion, Olive, Rucola, Garlic; \textbf{Herb}: Basil, Oregano; \textbf{PepperVegetable}: BellPepper, Jalapeno
+\item \textbf{Cheese}: Mozzarella, Parmesan, Gorgonzola, Provola, VeganCheese
+\item \textbf{Meat}: Ham, Salami, Pepperoni, Chicken, PorkGelatin
+\item \textbf{Fish}: Tuna, Anchovy
+\item \textbf{Fruit}: Pineapple
+\item \textbf{Fungus}: Mushroom
+\item \textbf{Nut}: PineNut
+\item \textbf{Sauce}: TomatoSauce, Pesto, GarlicOil
+\item \textbf{Spice}: BlackPepper, ChiliFlakes
+\item \textbf{BaseIngredient}: WheatFlour, GlutenFreeFlour, Water, Yeast, Salt, OliveOil, Egg
+\item \textbf{Component}: Gluten, Milk, Pork
+\end{itemize}
+
+\subsection*{DoughBase (4)}
+NormalDough, GlutenFreeDough, VeganDough
+
+\subsection*{DietaryRestriction (11)}
+\textbf{Diet}: VeganDiet, VegetarianDiet, PescatarianDiet, HalalDiet, KosherDiet.\\
+\textbf{Allergy}: NutAllergy, GlutenIntolerance, LactoseIntolerance.\\
+Note: an allergy is not a diet, so they are two separate children of DietaryRestriction.
+
+\subsection*{Customer (1), Certification (4), SpicinessLevel (4)}
+Customer. HalalCertified, KosherCertified, VeganCertified. NotSpicy, MediumSpicy, HotSpicy (a value partition: disjoint and covering).
+
+\section{Properties (11)}
+\begin{tabular}{lll}
+\toprule
+Property & Signature & Typed or derived\\
+\midrule
+hasTopping & Pizza to Ingredient & typed\\
+hasBase & Pizza to DoughBase & typed\\
+madeFrom & Ingredient to Ingredient & typed\\
+contains & Pizza to Ingredient & derived\\
+hasSpiciness & Ingredient to SpicinessLevel & typed\\
+hasRestriction & Customer to DietaryRestriction & typed\\
+forbids & DietaryRestriction to category & typed\\
+hasCertification & Ingredient to Certification & typed\\
+unsafeFor & Pizza to Customer & derived\\
+safeFor & Pizza to Customer & derived\\
+\bottomrule
+\end{tabular}
+
+\section{Defined classes (10)}
+VegetarianPizza, VeganPizza, PescatarianPizza, HalalPizza, NutFreePizza, GlutenFreePizza, DairyFreePizza, SpicyPizza, MeatLoversPizza, and VegetarianSalamiPizza (deliberately impossible, our contradiction demo).
+
+\section{Individuals (12)}
+Customers: anna (VeganDiet), omar (HalalDiet and NutAllergy), mia (LactoseIntolerance), lisa (VegetarianDiet and GlutenIntolerance), tom (no restrictions). Plus example pizza individuals if the OWL team wants an ABox demo.
+
+\section{Count}
+72 classes + 11 properties + 10 defined classes + 12 individuals, roughly 105 terms, inside the 50 to 100 target with margin.
+\end{document}
