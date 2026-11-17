@@ -60,6 +60,11 @@ RESTRICTION_CLASSES = {
     "NutAllergy": "NutFreeDish",
     "GlutenIntolerance": "GlutenFreeDish",
     "LactoseIntolerance": "LactoseFreeDish",
+    "PeanutAllergy": "PeanutFreeDish",
+    "SoyAllergy": "SoyFreeDish",
+    "EggAllergy": "EggFreeDish",
+    "ShellfishAllergy": "ShellfishFreeDish",
+    "FishAllergy": "FishFreeDish",
 }
 DISH_TYPES = {
     "PorkShoyuRamen": "Ramen",
@@ -70,6 +75,11 @@ DISH_TYPES = {
     "UnknownDressingBowl": "RiceBowl",
     "CashewVegetableStirFry": "StirFry",
     "ChickpeaTomatoStew": "Stew",
+    "PadThai": "NoodleDish",
+    "MisoSoup": "Soup",
+    "CaesarSalad": "Salad",
+    "ShrimpTempura": "Tempura",
+    "Cheeseburger": "Burger",
 }
 RECIPE_TAGS = {"CompleteRecipe", "EvaluationFixture"}
 INGREDIENT_METADATA = {"UnknownComposition", "HalalCertified"}
@@ -280,6 +290,11 @@ def build():
         "EvaluationFixture": "Dish",
         "MenuDish": "Dish",
         "GlutenIntolerance": "Intolerance",
+        "PeanutAllergy": "Allergy",
+        "SoyAllergy": "Allergy",
+        "EggAllergy": "Allergy",
+        "ShellfishAllergy": "Allergy",
+        "FishAllergy": "Allergy",
         **{name: "Dish" for name in sorted(set(DISH_TYPES.values()))},
     }.items():
         classes[name] = add_class(tree, name, iri(parent) if parent else None)
@@ -375,6 +390,18 @@ def build():
         compatible = expression("owl:intersectionOf", reference(iri("CompleteRecipe")),
                                 complement(restriction("contains", "owl:someValuesFrom",
                                     expression("owl:unionOf", *(has_category(tag) for tag in sorted(values))))))
+        if name == "KosherDiet":
+            # Kosher also forbids meat and dairy in the same dish (a rule about a combination).
+            def meat_and_dairy():
+                return expression("owl:intersectionOf",
+                                  restriction("contains", "owl:someValuesFrom", has_category("Meat")),
+                                  restriction("contains", "owl:someValuesFrom", has_category("Dairy")))
+            combination = expression("owl:intersectionOf", reference(iri("Dish")), meat_and_dairy())
+            element("rdfs:subClassOf", combination).append(
+                restriction("violatesRestriction", "owl:hasValue", iri(name))
+            )
+            tree.append(combination)
+            compatible = expression("owl:intersectionOf", compatible, complement(meat_and_dairy()))
         add_class(tree, RESTRICTION_CLASSES[name], definition=compatible)
     add_distinct(tree, forbidden)
 

@@ -6,3 +6,10 @@ mia,LactoseIntolerance
 lisa,VegetarianDiet
 lisa,GlutenIntolerance
 tom,None
+sam,KosherDiet
+kim,PescatarianDiet
+kim,PeanutAllergy
+alex,SoyAllergy
+alex,EggAllergy
+robin,FishAllergy
+robin,ShellfishAllergy

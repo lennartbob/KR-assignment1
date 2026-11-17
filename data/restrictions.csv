@@ -11,3 +11,13 @@ KosherDiet,Pork
 NutAllergy,Nut
 GlutenIntolerance,Gluten
 LactoseIntolerance,Lactose
+VeganDiet,Crustacean
+VeganDiet,AnimalRennet
+VegetarianDiet,Crustacean
+VegetarianDiet,AnimalRennet
+KosherDiet,Crustacean
+PeanutAllergy,Peanut
+SoyAllergy,Soy
+EggAllergy,Egg
+ShellfishAllergy,Crustacean
+FishAllergy,Fish

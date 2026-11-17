@@ -31,3 +31,14 @@ CertifiedGelatinFixture,EvaluationFixture
 CertifiedGelatinFixture,CompleteRecipe
 GelatinAndPorkFixture,EvaluationFixture
 GelatinAndPorkFixture,CompleteRecipe
+Peanut,Peanut
+Soybean,Soy
+Egg,Egg
+Shrimp,Crustacean
+BonitoFlakes,Fish
+AnimalRennet,AnimalRennet
+PadThai,CompleteRecipe
+MisoSoup,CompleteRecipe
+CaesarSalad,CompleteRecipe
+ShrimpTempura,CompleteRecipe
+Cheeseburger,CompleteRecipe
