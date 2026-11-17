@@ -29,6 +29,13 @@ spicyBecause(?dish, ?ingredient) :- containsIngredient(?dish, ?ingredient), cate
 containsDairy(?dish) :- containsIngredient(?dish, ?ingredient), category(?ingredient, Dairy) .
 dairyFree(?dish) :- dish(?dish), category(?dish, CompleteRecipe), ~containsDairy(?dish) .
 
+% Extension: kosher also forbids meat and dairy in the same dish.
+% This is a rule about a combination of two categories, so it needs two witnesses.
+combinationViolation(?dish, KosherDiet, ?meat, ?dairy) :-
+    containsIngredient(?dish, ?meat), category(?meat, Meat),
+    containsIngredient(?dish, ?dairy), category(?dairy, Dairy) .
+blocked(?dish, KosherDiet) :- combinationViolation(?dish, KosherDiet, ?meat, ?dairy) .
+
 % Q13 compares an explicit hypothetical policy for the two gelatin fixtures.
 containsOutsideException(?dish, ?ingredient) :-
     category(?dish, EvaluationFixture), directIngredient(?dish, ?ingredient), ~category(?ingredient, HalalCertified) .
@@ -56,3 +63,4 @@ integrityViolation(?dish, ?ingredient) :-
 @export dairyFree :- csv {} .
 @export halalWithFixtureException :- csv {} .
 @export integrityViolation :- csv {} .
+@export combinationViolation :- csv {} .
