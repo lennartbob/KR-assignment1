@@ -1,0 +1,8 @@
+type,category
+MeatProduct,Meat
+PorkProduct,Pork
+FishProduct,Fish
+ShellfishProduct,Crustacean
+TreeNut,Nut
+EggProduct,Egg
+EggProduct,AnimalProduct

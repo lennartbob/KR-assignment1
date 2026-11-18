@@ -4,6 +4,17 @@
 @import category :- csv { resource = "../data/categories.csv", ignore_headers = true } .
 @import forbids :- csv { resource = "../data/restrictions.csv", ignore_headers = true } .
 @import customerRestriction :- csv { resource = "../data/customers.csv", ignore_headers = true } .
+@import dishType :- csv { resource = "../data/dish_types.csv", ignore_headers = true } .
+@import ingredientType :- csv { resource = "../data/ingredient_types.csv", ignore_headers = true } .
+@import subTypeOf :- csv { resource = "../data/type_hierarchy.csv", ignore_headers = true } .
+@import typeCategory :- csv { resource = "../data/type_categories.csv", ignore_headers = true } .
+@import calories :- csv { resource = "../data/dish_calories.csv", ignore_headers = true } .
+
+% Ingredient taxonomy. OWL gets these inferences from subclass reasoning.
+% In Datalog the hierarchy is data, so two rules walk it and one rule inherits the categories.
+instanceOf(?ingredient, ?type) :- ingredientType(?ingredient, ?type) .
+instanceOf(?ingredient, ?parent) :- instanceOf(?ingredient, ?type), subTypeOf(?type, ?parent) .
+category(?ingredient, ?tag) :- instanceOf(?ingredient, ?type), typeCategory(?type, ?tag) .
 
 directIngredient(?dish, ?ingredient) :- hasIngredient(?dish, ?ingredient) .
 directIngredient(?dish, ?ingredient) :- hasBase(?dish, ?ingredient) .
@@ -36,6 +47,43 @@ combinationViolation(?dish, KosherDiet, ?meat, ?dairy) :-
     containsIngredient(?dish, ?dairy), category(?dairy, Dairy) .
 blocked(?dish, KosherDiet) :- combinationViolation(?dish, KosherDiet, ?meat, ?dairy) .
 
+% Counterparts of the OWL classes that use the taxonomy and the constructs beyond ALC.
+% CompositeIngredient: an ingredient with at least one stated component.
+compositeIngredient(?ingredient) :- madeFrom(?ingredient, ?component) .
+% PlantBasedDish: a complete recipe in which nothing is animal sourced (needs negation).
+containsAnimalSourced(?dish) :- containsIngredient(?dish, ?ingredient), instanceOf(?ingredient, AnimalSourcedIngredient) .
+plantBasedDish(?dish) :- dish(?dish), category(?dish, CompleteRecipe), ~containsAnimalSourced(?dish) .
+% SeafoodDish: fish or shellfish at any depth of the recipe (a union needs two rules).
+seafoodDish(?dish) :- containsIngredient(?dish, ?ingredient), instanceOf(?ingredient, FishProduct) .
+seafoodDish(?dish) :- containsIngredient(?dish, ?ingredient), instanceOf(?ingredient, ShellfishProduct) .
+% PizzaIngredient: everything that ends up in some pizza.
+pizzaIngredient(?ingredient) :- dishType(?dish, Pizza), containsIngredient(?dish, ?ingredient) .
+% MultiRestrictionCustomer: two different restrictions (counting needs an inequality).
+multiRestrictionCustomer(?customer) :-
+    hasRestriction(?customer, ?first), hasRestriction(?customer, ?second), ?first != ?second .
+% SafeForEveryRestrictionDish: a complete menu dish that no restriction blocks.
+blockedBySome(?dish) :- blocked(?dish, ?restriction) .
+safeForEveryRestriction(?dish) :- menuDish(?dish), category(?dish, CompleteRecipe), ~blockedBySome(?dish) .
+
+% LightDish: a menu dish with at most 600 kcal. The same number is in tools/build_ontology.py.
+lightDish(?dish) :- menuDish(?dish), calories(?dish, ?kcal), ?kcal <= 600 .
+
+% Integrity checks. In OWL the matching axioms make the ontology inconsistent when they are broken.
+% Datalog has no inconsistency, so each check is a rule that should derive nothing.
+% OWL can only forbid a direct loop (madeFrom is irreflexive), because the transitive role
+% hasComponent is not simple. Datalog can check loops of any length.
+hasComponent(?ingredient, ?part) :- madeFrom(?ingredient, ?part) .
+hasComponent(?ingredient, ?part) :- hasComponent(?ingredient, ?middle), madeFrom(?middle, ?part) .
+compositionCycle(?ingredient) :- hasComponent(?ingredient, ?ingredient) .
+% A pizza has exactly one base, and it is a dough or batter.
+hasSomeBase(?dish) :- hasBase(?dish, ?base) .
+pizzaBaseProblem(?dish) :- dishType(?dish, Pizza), ~hasSomeBase(?dish) .
+pizzaBaseProblem(?dish) :- dishType(?dish, Pizza), hasBase(?dish, ?base), ~instanceOf(?base, DoughOrBatter) .
+% hasBase is functional: no dish has two different bases.
+twoBases(?dish) :- hasBase(?dish, ?first), hasBase(?dish, ?second), ?first != ?second .
+% Ingredient types on the same level are disjoint: no ingredient has two stated types.
+twoTypes(?ingredient) :- ingredientType(?ingredient, ?first), ingredientType(?ingredient, ?second), ?first != ?second .
+
 % Q13 compares an explicit hypothetical policy for the two gelatin fixtures.
 containsOutsideException(?dish, ?ingredient) :-
     category(?dish, EvaluationFixture), directIngredient(?dish, ?ingredient), ~category(?ingredient, HalalCertified) .
@@ -64,3 +112,15 @@ integrityViolation(?dish, ?ingredient) :-
 @export halalWithFixtureException :- csv {} .
 @export integrityViolation :- csv {} .
 @export combinationViolation :- csv {} .
+@export instanceOf :- csv {} .
+@export compositeIngredient :- csv {} .
+@export plantBasedDish :- csv {} .
+@export seafoodDish :- csv {} .
+@export pizzaIngredient :- csv {} .
+@export multiRestrictionCustomer :- csv {} .
+@export safeForEveryRestriction :- csv {} .
+@export lightDish :- csv {} .
+@export compositionCycle :- csv {} .
+@export pizzaBaseProblem :- csv {} .
+@export twoBases :- csv {} .
+@export twoTypes :- csv {} .

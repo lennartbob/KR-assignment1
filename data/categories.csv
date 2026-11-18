@@ -1,16 +1,7 @@
 item,category
-PineNut,Nut
-Cashew,Nut
-Pork,Meat
-Pork,Pork
 PorkGelatin,AnimalProduct
 PorkGelatin,HalalCertified
-Beef,Meat
-Salami,Meat
-Tuna,Fish
-Anchovy,Fish
 Milk,Dairy
-Egg,AnimalProduct
 Gluten,Gluten
 Lactose,Lactose
 ChiliFlakes,HotSpicy
@@ -33,9 +24,6 @@ GelatinAndPorkFixture,EvaluationFixture
 GelatinAndPorkFixture,CompleteRecipe
 Peanut,Peanut
 Soybean,Soy
-Egg,Egg
-Shrimp,Crustacean
-BonitoFlakes,Fish
 AnimalRennet,AnimalRennet
 PadThai,CompleteRecipe
 MisoSoup,CompleteRecipe
