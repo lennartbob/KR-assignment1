@@ -19,16 +19,22 @@ import org.semanticweb.owlapi.profiles.OWLProfileReport;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
 public class VerifyOntology {
-    private static final Map<String, String> COMPLIANCE_CLASSES = Map.of(
-        "VeganDiet", "VeganDish",
-        "VegetarianDiet", "VegetarianDish",
-        "PescatarianDiet", "PescatarianDish",
-        "HalalDiet", "HalalCompatibleDish",
-        "KosherDiet", "KosherCompatibleDish",
-        "NutAllergy", "NutFreeDish",
-        "GlutenIntolerance", "GlutenFreeDish",
-        "LactoseIntolerance", "LactoseFreeDish"
+        private static final Map<String, String> COMPLIANCE_CLASSES = Map.ofEntries(
+        Map.entry("VeganDiet", "VeganDish"),
+        Map.entry("VegetarianDiet", "VegetarianDish"),
+        Map.entry("PescatarianDiet", "PescatarianDish"),
+        Map.entry("HalalDiet", "HalalCompatibleDish"),
+        Map.entry("KosherDiet", "KosherCompatibleDish"),
+        Map.entry("NutAllergy", "NutFreeDish"),
+        Map.entry("GlutenIntolerance", "GlutenFreeDish"),
+        Map.entry("LactoseIntolerance", "LactoseFreeDish"),
+        Map.entry("PeanutAllergy", "PeanutFreeDish"),
+        Map.entry("SoyAllergy", "SoyFreeDish"),
+        Map.entry("EggAllergy", "EggFreeDish"),
+        Map.entry("ShellfishAllergy", "ShellfishFreeDish"),
+        Map.entry("FishAllergy", "FishFreeDish")
     );
+    
     private static final String LEGACY_CUSTOMER = "http://webprotege.stanford.edu/RBm263Lg2Mmwf39Po96cwhj";
 
     private final OWLReasoner reasoner;
